@@ -18,7 +18,7 @@ const ToggleSwitch = ({ id, name, checked, onChange, optionLabels, small, disabl
   }
 
   return (
-    <div className={"toggle-switch" + (small ? " small-switch" : "")}>
+    <div className={"toggle-switch" + (small ? " small-switch" : "") }>
       <input
         type="checkbox"
         name={name}

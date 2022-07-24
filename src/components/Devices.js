@@ -89,37 +89,27 @@ const Devices = () => {
                      <div className="col">
                         <ReactSpeedometer forceRender={true} currentValueText="MKWH (KWH): #{value}" currentValuePlaceholderStyle={'#{value}'}  minValue={0} maxValue={100} value={params.MkWh} segments={3} needleColor="steelblue" needleTransitionDuration={4000} needleTransition="easeElastic"/>
                     </div>
-                    <div className="col">
+                    <div className="col" >
+                        <div className="mt-4">
                         <ToggleSwitch id="D0" checked={ params.D0 === 0?false:true } onChange={checked => setChecked(checked)} OnName = "D0 ON" OffName = "D0 Off" />
                         <label htmlFor="D0">D0 Status</label>
-                        
-                    </div>
-                    <div className="row">
-                    <div className="col">
                         <ToggleSwitch id="D1" checked={ params.D1 === 0?false:true } onChange={checked => setChecked(checked)} OnName = "D0 ON" OffName = "D0 Off" />
                         <label htmlFor="D1">D1 Status</label>
-                    </div>	
-                     <div className="col">
-                         <ToggleSwitch id="D2" checked={ params.D2 === 0?false:true } onChange={checked => setChecked(checked)} OnName = "D0 ON" OffName = "D0 Off" />
+                        </div>
+                        <div className= "mt-4">
+                        <ToggleSwitch id="D2" checked={ params.D2 === 0?false:true } onChange={checked => setChecked(checked)} OnName = "D0 ON" OffName = "D0 Off" />
                         <label htmlFor="D2">D2 Status</label>
-                    </div>
-                    <div className="col">
                         <ToggleSwitch id="D3" checked={ params.D3 === 0?false:true } onChange={checked => setChecked(checked)} OnName = "D0 ON" OffName = "D0 Off" />
                         <label htmlFor="D3">D3 Status</label>
-                        
-                    </div>
-                    </div>
-                    <div className="row my-4">
-                    <div className="col">
+                        </div >
+                        <div className= "mt-4">
                         <ToggleSwitch id="D4" checked={ params.D4 === 0?false:true } onChange={checked => setChecked(checked)} OnName = "D0 ON" OffName = "D0 Off" />
                         <label htmlFor="D4">D4 Status</label>
-                    </div>	
-                     <div className="col">
-                         <ToggleSwitch id="D5" checked={ params.D5 === 0?false:true } onChange={checked => setChecked(checked)} OnName = "D0 ON" OffName = "D0 Off" />
+                        <ToggleSwitch id="D5" checked={ params.D5 === 0?false:true } onChange={checked => setChecked(checked)} OnName = "D0 ON" OffName = "D0 Off" />
                         <label htmlFor="D5">D5 Status</label>
+                        </div >
                     </div>
                    
-                    </div>
                 </div>
                 </div>
            
